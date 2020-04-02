@@ -1,25 +1,3 @@
-/*
-const pictures = [
-  {
-    id: '1',
-    name: 'foo',
-    url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
-  },
-  {
-    id: '2',
-    name: 'foo',
-    url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
-  },
-  {
-    id: '3',
-    name: 'foo',
-    url: 'https://gw.alipayobjects.com/mdn/rms_d212b7/afts/img/A*LlfeSa8N0WgAAAAAAAAAAABkARQnAQ'
-  },
-];
-
-*/
-
-
 import React from 'react'
 import {pictures} from './pictures.js'
 import PictureSelect from './PictureSelect'
@@ -51,10 +29,8 @@ export default class Page extends React.Component {
     checkAll = () => {
         const { checkedArr } = this.state
         if (checkedArr.length === 3) {
-            console.log('sss')
             this.setState({ checkedArr: [] })
         } else {
-            console.log('bbb')
             this.setState({ checkedArr: ['1', '2', '3'] })
         }
     }
